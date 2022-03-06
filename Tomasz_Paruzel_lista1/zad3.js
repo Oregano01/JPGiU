@@ -4,12 +4,9 @@ function suma(args) {
     {
         if(isNaN(args)) 
         {
-            result = result + args;
+            result = result + i.value;
         }
-        else
-        {
-            result = result+0
-        }
+      
     }
     return result;
 }

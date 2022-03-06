@@ -1,28 +1,28 @@
-// class Kwadrat {
-//     constructor(a) { this.a = a; }
-//     get bok() { return this.a; }
-//     set bok(a) { this.a = a; }
-//     get obwód() { return 4 * this.a; }
-//     set obwód(len) { this.a = len / 4; }
-//     get pole() { return this.a * this.a; }
-//     set pole(P) { this.a = Math.sqrt(P); }
-//     toString() {return 'a=${this.bok}\nL=${this.obwód}\nP=${this.pole}\n';}
-//     }
-// let k = new Kwadrat(1);
-// console.log(k.bok, k.obwód, k.pole);
-// console.log(k+"");
+class Kwadrat {
+    constructor(a) { this.a = a; }
+    get bok() { return this.a; }
+    set bok(a) { this.a = a; }
+    get obwód() { return 4 * this.a; }
+    set obwód(len) { this.a = len / 4; }
+    get pole() { return this.a * this.a; }
+    set pole(P) { this.a = Math.sqrt(P); }
+    toString() {return 'a=${this.bok}\nL=${this.obwód}\nP=${this.pole}\n';}
+    }
+let k = new Kwadrat(1);
+console.log(k.bok, k.obwód, k.pole);
+console.log(k+"");
 
-// k.bok = 12;
-// console.log(k.bok, k.obwód, k.pole);
-// console.log(k+"");
+k.bok = 12;
+console.log(k.bok, k.obwód, k.pole);
+console.log(k+"");
 
-// k.obwód = 12;
-// console.log(k.bok, k.obwód, k.pole);
-// console.log(k+"");
+k.obwód = 12;
+console.log(k.bok, k.obwód, k.pole);
+console.log(k+"");
 
-// k.pole=12;
-// console.log(k.bok, k.obwód, k.pole);
-// console.log(k+"");
+k.pole=12;
+console.log(k.bok, k.obwód, k.pole);
+console.log(k+"");
 
 class Koło {
     constructor(R) {
@@ -83,3 +83,4 @@ console.log(l+"");
 l.obwód=7;          // zmienia promień na 3.5/Pi
 console.log(l.promień, l.średnica, l.pole, l.obwód);
 console.log(l+"");
+

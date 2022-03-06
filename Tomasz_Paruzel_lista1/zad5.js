@@ -1,18 +1,23 @@
 function* dzielniki(n) {
-    var index = 2;
-    let liczba = n;
-    while (liczba > 1) {
-        if (liczba % index ==0) {
-            liczba /= index;
-        }
-        else
-        {
-            yield index++
-        }
+   for ( i = 2; i<n; i++ ) {
+        if (n % i === 0){
+            yield i;
+         }
+       }
     }
+
+
+var g = dzielniki(9);
+
+function wypisz(gen) {
+    for (let x of gen)
+        console.log(x);
 }
 
-var gen = dzielniki();
+function wypisz2(gen) {
+    while (!(x = gen.next()).done)
+        console.log(x.value);
+}
 
-console.log(dzielniki(6))
-
+wypisz(g);
+// wypisz2(g);
