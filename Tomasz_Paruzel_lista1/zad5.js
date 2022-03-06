@@ -22,7 +22,7 @@ function* pierwsze(n) {
     }
 }
 
-//funkcja rozkładająca liczbę n na czynniki pierwsze
+//funkcja rozkładająca liczbę 'n' na czynniki pierwsze
 function* rozkład(n) {
     for (i = 2; n!=1;) {
         if (n%i==0) {
@@ -35,7 +35,7 @@ function* rozkład(n) {
     }
 }
 
-//przypisanie naszej funkcji do argumentu w celu póżniejszego wykorzystania w kolejnych funkcjach
+//przypisanie naszych funkcji do argumentu w celu póżniejszego wykorzystania w kolejnych funkcjach
 var g = dzielniki(27);
 var p = pierwsze(12);
 var r = rozkład(18);
