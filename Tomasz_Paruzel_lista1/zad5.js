@@ -1,3 +1,4 @@
+//funkcja z gwiazdką, która zwraca dzilniki liczby 'n'
 function* dzielniki(n) {
    for ( i = 2; i<n; i++ ) {
         if (n % i === 0){
@@ -6,8 +7,38 @@ function* dzielniki(n) {
        }
     }
 
+//funkcja wypisujaca wszystkie liczby pierwsze do liczby 'n'
+function* pierwsze(n) {
+    for (i=1; i<n; i++) {
+        var notPrime = false;
+        for (j = 2; j<i; j++) {
+            if (i%j===0 && j!==i){
+                notPrime = true;
+            }
+        }
+        if (notPrime === false) {
+            yield i;
+        }
+    }
+}
 
-var g = dzielniki(9);
+//funkcja rozkładająca liczbę n na czynniki pierwsze
+function* rozkład(n) {
+    for (i = 2; n!=1;) {
+        if (n%i==0) {
+            yield i;
+            n /= i;
+        }
+        else {
+            i++;
+        }
+    }
+}
+
+//przypisanie naszej funkcji do argumentu w celu póżniejszego wykorzystania w kolejnych funkcjach
+var g = dzielniki(27);
+var p = pierwsze(12);
+var r = rozkład(18);
 
 function wypisz(gen) {
     for (let x of gen)
@@ -19,5 +50,8 @@ function wypisz2(gen) {
         console.log(x.value);
 }
 
-wypisz(g);
+
+//Sprawdzamy funkcjonowanie funkcji trzema metodami
+// console.log(Array.from(p));
+wypisz(r);
 // wypisz2(g);
