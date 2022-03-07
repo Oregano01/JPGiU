@@ -1,14 +1,17 @@
-function suma(args) {
+function suma(arg) {
     let result = 0;
-    for (var i = 0; i < arguments.length; i++)
-    {
-        if(isNaN(args)) 
-        {
-            result = result + i.value;
-        }
-      
+    for (let arg of arguments)
+    {        
+        if (typeof arg ==='number')
+            result +=  arg;     
+        else if (Array.isArray(arg))
+            result+=suma(...arg);
     }
     return result;
 }
 
+
+
 console.log(suma(1,2,3,10,[],20,30,"marek",{a:4}));
+console.log(suma(1,2,3,[4,5,"aa"],10,"asda"));
+console.log(suma(1,2,3,[4,5,[5,5]],10))

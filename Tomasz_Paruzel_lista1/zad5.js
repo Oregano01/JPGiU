@@ -35,6 +35,40 @@ function* rozkład(n) {
     }
 }
 
+//funkcja sklej
+function sklej(gen, glue=',') {
+    let skl = '';
+    for (let arg of gen) {
+        skl += arg + glue
+    }
+    console.log(skl);
+    return skl;
+          
+   
+}
+
+//funkcja suma
+function suma(gen) {
+    var s = 0;
+    for (let arg of gen)
+        s += arg;
+
+    console.log(s)
+    return s;
+    
+}
+
+//funkcja iloczyn
+function iloczyn(gen) {
+    var ilo = 1;
+    for (let arg of gen) {
+        ilo *= arg;
+    }
+    console.log(ilo);
+    return ilo;
+        
+}
+
 //przypisanie naszych funkcji do argumentu w celu póżniejszego wykorzystania w kolejnych funkcjach
 var g = dzielniki(27);
 var p = pierwsze(12);
@@ -53,5 +87,9 @@ function wypisz2(gen) {
 
 //Sprawdzamy funkcjonowanie funkcji trzema metodami
 // console.log(Array.from(p));
-wypisz(r);
+//  wypisz(r);
 // wypisz2(g);
+
+sklej(r);
+// suma(g);
+// iloczyn(p);
