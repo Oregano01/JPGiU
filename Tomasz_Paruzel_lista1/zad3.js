@@ -12,6 +12,6 @@ function suma(arg) {
 
 
 
-console.log(suma(1,2,3,10,[],20,30,"marek",{a:4}));
-console.log(suma(1,2,3,[4,5,"aa"],10,"asda"));
-console.log(suma(1,2,3,[4,5,[5,5]],10))
+console.log(suma(1,2,3,10,[],20,30,"marek",{a:4}));     //66
+console.log(suma(1,2,3,[4,5,"aa"],10,"asda"));          //25
+console.log(suma(1,2,3,[4,5,[5,5]],10));                //35
