@@ -1,15 +1,14 @@
-function* fragment(iter, skip, limit=1) {
+function* fragment(iter, skip, limit = 1) {
     for (let x of iter) {
-        if (skip!=0) {
+        if (skip != 0) {
             skip--;
         }
-        else if (limit!=0)
-        {
+        else if (limit != 0) {
             yield x;
             limit--;
         }
-    if (limit===0) 
-        break;
+        if (limit === 0)
+            break;
     }
 }
 
@@ -21,8 +20,8 @@ function* Fibonacci() {
         f1 = f2;
         f2 = current + f1;
         yield current;
-        }
     }
+}
 
 for (let x of fragment(Fibonacci(), 50, 1))
     console.log(x)

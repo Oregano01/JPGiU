@@ -1,18 +1,18 @@
 //funkcja z gwiazdką, która zwraca dzilniki liczby 'n'
 function* dzielniki(n) {
-   for ( i = 2; i<n; i++ ) {
-        if (n % i === 0){
+    for (i = 2; i < n; i++) {
+        if (n % i === 0) {
             yield i;
-         }
-       }
+        }
     }
+}
 
 //funkcja wypisujaca wszystkie liczby pierwsze do liczby 'n'
 function* pierwsze(n) {
-    for (i=1; i<n; i++) {
+    for (i = 1; i < n; i++) {
         var notPrime = false;
-        for (j = 2; j<i; j++) {
-            if (i%j===0 && j!==i){
+        for (j = 2; j < i; j++) {
+            if (i % j === 0 && j !== i) {
                 notPrime = true;
             }
         }
@@ -24,8 +24,8 @@ function* pierwsze(n) {
 
 //funkcja rozkładająca liczbę 'n' na czynniki pierwsze
 function* rozkład(n) {
-    for (i = 2; n!=1;) {
-        if (n%i==0) {
+    for (i = 2; n != 1;) {
+        if (n % i == 0) {
             yield i;
             n /= i;
         }
@@ -36,15 +36,15 @@ function* rozkład(n) {
 }
 
 //funkcja sklej
-function sklej(gen, glue=',') {
+function sklej(gen, glue = ',') {
     let skl = '';
     for (let arg of gen) {
         skl += arg + glue
     }
     console.log(skl);
     return skl;
-          
-   
+
+
 }
 
 //funkcja suma
@@ -55,7 +55,7 @@ function suma(gen) {
 
     console.log(s)
     return s;
-    
+
 }
 
 //funkcja iloczyn
@@ -66,7 +66,7 @@ function iloczyn(gen) {
     }
     console.log(ilo);
     return ilo;
-        
+
 }
 
 //przypisanie naszych funkcji do argumentu w celu póżniejszego wykorzystania w kolejnych funkcjach

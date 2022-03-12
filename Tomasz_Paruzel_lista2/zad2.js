@@ -3,18 +3,16 @@ function Fibo() {
     this.b = 1n;
 }
 
-Fibo.prototype.next = function() {
+Fibo.prototype.next = function () {
     this.current = this.a;
     [this.a, this.b] = [this.b, this.a + this.b];
-    return {value: this.current, done: false}
+    return { value: this.current, done: false }
 }
 
 let z2 = new Fibo()
 
-function wypisz(gen) {
-    for (i=0;i<200;i++) {
-        console.log(gen.next().value);
-    }
+for (i = 0; i < 200; i++) {
+    console.log(i + 1, " = ", z2.next().value);
 }
 
-wypisz(z2)
+
