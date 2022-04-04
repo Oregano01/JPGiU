@@ -9,6 +9,7 @@ function* Fibonacci() {
     }
 }
 
+
 var F = Fibonacci();
 
 

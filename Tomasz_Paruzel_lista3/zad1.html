@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 1</title>
+</head>
+
+<body> 
+    <input>+<input>=<input>
+
+    <script>
+        let [a,b,c] = document.querySelectorAll('input');
+        a.onkeyup = b.onkeyup = function f() {
+            c.value = +a.value + +b.value
+        }
+        c.onkeyup = function g() { 
+            a.value  = b.value = c.value / 2
+        }
+    </script>
+</body>
+
+</html>

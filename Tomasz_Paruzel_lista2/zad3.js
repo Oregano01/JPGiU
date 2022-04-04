@@ -23,5 +23,5 @@ function* Fibonacci() {
     }
 }
 
-for (let x of fragment(Fibonacci(), 50, 1))
+for (let x of fragment(Fibonacci(), 10, 5))
     console.log(x)

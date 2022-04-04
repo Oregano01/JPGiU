@@ -1,5 +1,5 @@
 Array.prototype.wspak = function* () {
-    for (var i = this.length - 1; i >= 0; i--) {
+    for (var i = this.length -1; i >= 0; i--) {
         yield this[i];
     }
 }
