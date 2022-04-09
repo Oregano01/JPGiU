@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
     <meta charset="UTF-8">
     <title>Zadanie 1</title>
 </head>
 
-<body> 
+<body>
     <input>+<input>=<input>
 
     <script>
-        let [a,b,c] = document.querySelectorAll('input');
+        let [a, b, c] = document.querySelectorAll('input');
+        // przy każdej wpisaniu wartości w polu input "A" lub "b" wynik ulega zmianie
         a.onkeyup = b.onkeyup = function f() {
-            c.value = +a.value + +b.value
-        }
-        c.onkeyup = function g() { 
-            a.value  = b.value = c.value / 2
+                c.value = +a.value + +b.value
+            }
+            // po wpisaniu wartości w pole "c" jego wartośc zostaje dzielona na 2 i wypisana w polach "a" oraz "b"
+        c.onkeyup = function g() {
+            a.value = b.value = c.value / 2
         }
     </script>
 </body>
