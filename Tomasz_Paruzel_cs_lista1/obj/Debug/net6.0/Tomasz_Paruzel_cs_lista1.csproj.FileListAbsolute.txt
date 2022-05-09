@@ -1,0 +1,15 @@
+/home/tomasz/Desktop/GiU/JPGiU/Tomasz_Paruzel_cs_lista1/bin/Debug/net6.0/Tomasz_Paruzel_cs_lista1
+/home/tomasz/Desktop/GiU/JPGiU/Tomasz_Paruzel_cs_lista1/bin/Debug/net6.0/Tomasz_Paruzel_cs_lista1.deps.json
+/home/tomasz/Desktop/GiU/JPGiU/Tomasz_Paruzel_cs_lista1/bin/Debug/net6.0/Tomasz_Paruzel_cs_lista1.runtimeconfig.json
+/home/tomasz/Desktop/GiU/JPGiU/Tomasz_Paruzel_cs_lista1/bin/Debug/net6.0/Tomasz_Paruzel_cs_lista1.dll
+/home/tomasz/Desktop/GiU/JPGiU/Tomasz_Paruzel_cs_lista1/bin/Debug/net6.0/Tomasz_Paruzel_cs_lista1.pdb
+/home/tomasz/Desktop/GiU/JPGiU/Tomasz_Paruzel_cs_lista1/obj/Debug/net6.0/Tomasz_Paruzel_cs_lista1.csproj.AssemblyReference.cache
+/home/tomasz/Desktop/GiU/JPGiU/Tomasz_Paruzel_cs_lista1/obj/Debug/net6.0/Tomasz_Paruzel_cs_lista1.GeneratedMSBuildEditorConfig.editorconfig
+/home/tomasz/Desktop/GiU/JPGiU/Tomasz_Paruzel_cs_lista1/obj/Debug/net6.0/Tomasz_Paruzel_cs_lista1.AssemblyInfoInputs.cache
+/home/tomasz/Desktop/GiU/JPGiU/Tomasz_Paruzel_cs_lista1/obj/Debug/net6.0/Tomasz_Paruzel_cs_lista1.AssemblyInfo.cs
+/home/tomasz/Desktop/GiU/JPGiU/Tomasz_Paruzel_cs_lista1/obj/Debug/net6.0/Tomasz_Paruzel_cs_lista1.csproj.CoreCompileInputs.cache
+/home/tomasz/Desktop/GiU/JPGiU/Tomasz_Paruzel_cs_lista1/obj/Debug/net6.0/Tomasz_Paruzel_cs_lista1.dll
+/home/tomasz/Desktop/GiU/JPGiU/Tomasz_Paruzel_cs_lista1/obj/Debug/net6.0/refint/Tomasz_Paruzel_cs_lista1.dll
+/home/tomasz/Desktop/GiU/JPGiU/Tomasz_Paruzel_cs_lista1/obj/Debug/net6.0/Tomasz_Paruzel_cs_lista1.pdb
+/home/tomasz/Desktop/GiU/JPGiU/Tomasz_Paruzel_cs_lista1/obj/Debug/net6.0/Tomasz_Paruzel_cs_lista1.genruntimeconfig.cache
+/home/tomasz/Desktop/GiU/JPGiU/Tomasz_Paruzel_cs_lista1/obj/Debug/net6.0/ref/Tomasz_Paruzel_cs_lista1.dll
