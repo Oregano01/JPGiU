@@ -17,8 +17,8 @@ namespace zad2 {
                 get
                 {
                     pobrania++;
-                    if (pobrania < operacje) {
-                        return wartosc;
+                    if (pobrania <= operacje) {
+                        return wartości;
                     }
                     else
                     {
@@ -30,8 +30,8 @@ namespace zad2 {
                 set
                 {
                     nadania++;
-                    if (nadania < operacje) {
-                        wartosc = value;
+                    if (nadania <= operacje) {
+                        wartości = value;
                     }
                     else
                     {
@@ -53,10 +53,14 @@ namespace zad2 {
     
 
         static void Main(String[] args) {
-            Liczby test = new Liczby(10,10);
+            Liczby test = new Liczby(5,5);
             Console.WriteLine(test.wartosc);
             Console.WriteLine(test.wartosc);
-            test.wartosc = 2;
+            Console.WriteLine(test.wartosc);
+            Console.WriteLine(test.wartosc);
+            Console.WriteLine(test.wartosc);
+
+            test.wartosc = 11;
             Console.WriteLine(test.wartosc);
             test.WypiszStan();
             Console.WriteLine(test.wartosc);
