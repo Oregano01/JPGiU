@@ -5,10 +5,10 @@ namespace zad2 {
         private int operacje;
         private int pobrania;
         private int nadania;
-        private int wartości;
+        private int wyniki;
 
         public Liczby(int val, int operations) {
-            wartości = val;
+            wyniki = val;
             operacje = operations;
         }
 
@@ -18,7 +18,7 @@ namespace zad2 {
                 {
                     pobrania++;
                     if (pobrania <= operacje) {
-                        return wartości;
+                        return wyniki;
                     }
                     else
                     {
@@ -31,7 +31,7 @@ namespace zad2 {
                 {
                     nadania++;
                     if (nadania <= operacje) {
-                        wartości = value;
+                        wyniki = value;
                     }
                     else
                     {
