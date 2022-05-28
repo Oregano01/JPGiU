@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 6</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>zsipaN tpyrks, yrótk w mydżak eiwołs icśert utnemukod icórwdo ćśonjelok retil.</h1>
+        <h2>Napis który nie był odrócony</h2>
+    </div>
+
+</body>
+
+<script>
+    let zawartosc = document.querySelectorAll("div");
+    let zamiana = zawartosc[0].childNodes;
+    for (let x of zamiana) {
+        let slowa = x.textContent.split(/[ ]/);
+
+        for (let i = 0; i < slowa.length; i++) {
+            if (slowa[i].endsWith(".")) {
+                slowa[i] = slowa[i].split('.')[0].split('').reverse().join('');
+                slowa[i] += ".";
+            } else if (slowa[i].endsWith(",")) {
+                slowa[i] = slowa[i].split(',')[0].split('').reverse().join('');
+                slowa[i] += ",";
+            } else {
+                slowa[i] = slowa[i].split('').reverse().join('');
+            }
+        }
+        x.textContent = slowa.join(" ");
+    }
+</script>
+
+</html>
