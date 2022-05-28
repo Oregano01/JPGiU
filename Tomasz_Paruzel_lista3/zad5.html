@@ -10,10 +10,47 @@
 
 <body>
     <div id="toc"></div>
-    <div id="spis">
-        <h1></h1>
+    <div id="Tresc">
+        <h1>1111</h1>
+        <h2>2222</h2>
+        <h1>1212</h1>
+        <h2>2121</h2>
+        <h3>3333</h3>
+        <h1>I kolejne miejse zdarzeń</h1>
+        <h1>ssssssss</h1>
 
     </div>
 </body>
+
+<script>
+    let spisTresci = document.getElementById("toc");
+    let content = document.querySelectorAll("#Tresc");
+    let list = "<ol>";
+    let inside = 1;
+    let outside = 1;
+
+    for (let i = 0; i < content[0].children.length; i++) {
+        if (content[0].children[i].localName = "h1") {
+            if (!content[0].children[i].id) {
+                content[0].children[i].id = outside;
+            } else {
+                outside = ocntent[0].children[i].id;
+            }
+
+            if (!content[0].children[i].previousElementSibling) {
+                list += "<li><a href='#" + outside + "'>" + content[0].children[i].innerHTML + "</a><ol>";
+            } else {
+                list += "</ol><li><a href='#" + outside + "'>" + content[0].children[i].innerHTML + "</a><ol>";
+                inside = 1;
+            }
+        } else if (content[0].children[i].localName == "h2") {
+            list += "<li><a href='#" + outside + "-" + inside + "'>" + content[0].children[i].innerHTML + "</a>";
+            content[0].children[i].id = outside + "-" + inside;
+            inside++;
+        }
+    }
+    list += "</ol>";
+    spisTresci.innerHTML = list;
+</script>
 
 </html>
